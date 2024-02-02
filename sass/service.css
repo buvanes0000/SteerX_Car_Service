@@ -1,0 +1,114 @@
+#service {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 568px) {
+  #service {
+    top: 5rem;
+  }
+}
+@media screen and (max-width: 312px) {
+  #service {
+    right: 3rem;
+  }
+}
+#service .man-II {
+  width: 300px;
+  align-self: flex-end;
+  position: absolute;
+  top: 10rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 558px) {
+  #service .man-II {
+    align-self: flex-start;
+    width: 200px;
+    top: 0;
+    left: 2rem;
+  }
+}
+@media screen and (max-width: 468px) {
+  #service .man-II {
+    left: 5rem;
+  }
+}
+#service h2 {
+  display: inline;
+  position: relative;
+  top: 13rem;
+  left: 7rem;
+  font-size: 3rem;
+  -webkit-text-decoration: underline #d71313;
+          text-decoration: underline #d71313;
+  width: -moz-max-content;
+  width: max-content;
+  color: #0d1282;
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 768px) {
+  #service h2 {
+    left: 3rem;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 468px) {
+  #service h2 {
+    font-size: 2rem;
+    left: 6.2rem;
+  }
+}
+#service .flex-service {
+  display: flex;
+  width: 70%;
+  left: 7rem;
+  position: relative;
+  top: 15rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  #service .flex-service {
+    left: 2rem;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 468px) {
+  #service .flex-service {
+    left: 5rem;
+  }
+}
+#service .items {
+  background-color: #fefbf6;
+  padding: 1rem;
+  width: 210px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+#service .items .icons {
+  width: 50px;
+  position: relative;
+  left: 4rem;
+}
+#service .items .rotating-image {
+  animation: rotate 4s linear infinite;
+  transform-origin: center;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#service .items p {
+  text-align: center;
+}
+@media screen and (max-width: 468px) {
+  #service .items {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=service.css.map */

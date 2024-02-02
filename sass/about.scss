@@ -1,0 +1,77 @@
+// Define variables for common properties
+$text-color: #333;
+$heading-color: #0d1282;
+$heading-underline-color: #d71313;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Base styles
+.content {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  padding: 80px;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  color: $heading-color;
+  text-decoration: underline $heading-underline-color;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.paragraph {
+  font-size: 0.9rem;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+.paragraph-bold {
+  font-weight: bolder;
+}
+
+// Media queries for responsiveness
+
+@media only screen and (max-width: $breakpoint-desktop) {
+  .content {
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  .content {
+    padding: 60px;
+  }
+
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+  .heading-secondary {
+    font-size: 1rem;
+  }
+  .paragraph {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .content {
+    padding: 0px;
+    transform: scale(0.7);
+  }
+
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+  .heading-secondary {
+    font-size: 1rem;
+  }
+  .paragraph {
+    font-size: 0.75rem;
+  }
+}

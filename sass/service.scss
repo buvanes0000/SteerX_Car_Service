@@ -1,0 +1,109 @@
+#service {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (max-width: 568px) {
+    top: 5rem;
+  }
+  @media screen and (max-width: 312px) {
+    right: 3rem;
+  }
+
+  .man-II {
+    width: 300px;
+    align-self: flex-end;
+    position: absolute;
+    top: 10rem;
+    object-fit: contain;
+
+    @media screen and (max-width: 558px) {
+      align-self: flex-start;
+      width: 200px;
+      top: 0;
+      left: 2rem;
+    }
+
+    @media screen and (max-width: 468px) {
+      left: 5rem;
+    }
+  }
+
+  h2 {
+    display: inline;
+    position: relative;
+    top: 13rem;
+    left: 7rem;
+    font-size: 3rem;
+    text-decoration: underline #d71313;
+    width: max-content;
+    color: #0d1282;
+    letter-spacing: 0.3rem;
+
+    @media screen and (max-width: 768px) {
+      left: 3rem;
+      transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 468px) {
+      font-size: 2rem;
+      left: 6.2rem;
+    }
+  }
+
+  .flex-service {
+    display: flex;
+    width: 70%;
+    left: 7rem;
+    position: relative;
+    top: 15rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      left: 2rem;
+      transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 468px) {
+      left: 5rem;
+    }
+  }
+
+  .items {
+    background-color: #fefbf6;
+    padding: 1rem;
+    width: 210px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+    .icons {
+      width: 50px;
+      position: relative;
+      left: 4rem;
+    }
+
+    .rotating-image {
+      animation: rotate 4s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    p {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 468px) {
+      font-size: 0.9rem;
+    }
+  }
+}

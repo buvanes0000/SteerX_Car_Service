@@ -1,0 +1,256 @@
+header {
+  height: 100vh;
+}
+header .fixed {
+  margin-top: 0;
+}
+header nav {
+  position: fixed;
+  z-index: 1;
+  top: 1em;
+  width: 90%;
+  left: 4rem;
+  gap: 1rem;
+  background-color: #fefbf6;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.8rem;
+  transition: 0.5s ease;
+}
+@media (max-width: 768px) {
+  header nav {
+    left: 2rem;
+  }
+}
+@media (max-width: 468px) {
+  header nav {
+    width: 100%;
+    left: 0;
+  }
+}
+header nav div {
+  justify-self: end;
+  display: inline-flex;
+  gap: 0.5em;
+  padding-left: 0.5rem;
+}
+header nav div img {
+  width: 50px;
+  border-radius: 50%;
+}
+header nav div .search-btn {
+  background: transparent;
+  border-radius: 20px;
+  height: 40px;
+  position: relative;
+  padding: 0.5rem 0.3rem;
+  top: 0.35em;
+  border: 0.1px solid #191717;
+}
+header nav div .search-btn img {
+  width: 15%;
+}
+header nav div .search-btn input {
+  color: #191717;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 1px;
+  background: transparent;
+}
+header nav div .search-btn input:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+header nav .show-menu {
+  left: 0;
+}
+header nav ul {
+  display: flex;
+  gap: 1em;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 5.11em;
+    text-align: center;
+    left: -100%;
+    background-color: #fefbf6;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem 0;
+    width: 100%;
+    transition: 0.7s ease-in;
+  }
+}
+header nav ul li {
+  list-style: none;
+  letter-spacing: 2px;
+}
+header nav ul li a {
+  color: #191717;
+  text-decoration: none;
+  position: relative;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+header nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+header nav ul li a:hover {
+  letter-spacing: 0.5rem;
+}
+header nav ul li .nav-link {
+  transition: 0.5s linear;
+}
+header nav .menu-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0.4rem;
+  bottom: 0.3rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav .menu-container {
+    display: block;
+  }
+}
+header nav .menu-container .menu-line {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #191717;
+  display: block;
+  margin-top: 0.4em;
+  transition: 0.5s ease;
+}
+header .flex-hero {
+  display: inline-flex;
+  position: relative;
+  top: 15rem;
+  width: 80%;
+  align-items: center;
+  left: 7rem;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  header .flex-hero {
+    width: 90%;
+    left: 1rem;
+    top: 15rem;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 364px) {
+  header .flex-hero {
+    gap: 2rem;
+  }
+}
+header .flex-hero .name-slogan {
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  header .flex-hero .name-slogan {
+    text-align: center;
+  }
+}
+header .flex-hero .name-slogan h1 {
+  font-size: 5em;
+  letter-spacing: 0.3rem;
+}
+@media (max-width: 965px) {
+  header .flex-hero .name-slogan h1 {
+    font-size: 3rem;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .flex-hero .name-slogan h1 {
+    text-align: center;
+  }
+}
+header .flex-hero .name-slogan h1 span {
+  color: #d71313;
+}
+header .flex-hero .name-slogan p {
+  letter-spacing: 0.15em;
+}
+@media (max-width: 965px) {
+  header .flex-hero .name-slogan p {
+    font-size: 0.8rem;
+    text-align: start;
+  }
+}
+@media (max-width: 565px) {
+  header .flex-hero .name-slogan p {
+    font-size: 0.6rem;
+    text-align: start;
+  }
+}
+header .flex-hero .name-slogan button {
+  background-color: black;
+  color: #f7f7f7;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s background-color ease, transform 0.2s;
+}
+header .flex-hero .name-slogan button:hover {
+  background-color: #d71313;
+  transform: translateY(-3px);
+}
+header .flex-hero .car {
+  width: 50%;
+  height: 50%;
+  top: 2rem;
+}
+@media (max-width: 968px) {
+  header .flex-hero .car {
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .flex-hero .car {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 364px) {
+  header .flex-hero .car {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.menu-container.active .menu-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-container.active .menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-container.active .menu-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}/*# sourceMappingURL=header.css.map */
