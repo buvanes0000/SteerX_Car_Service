@@ -27,7 +27,7 @@
   height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 30%;
+  border-radius: 40%;
   transition: all 0.7s;
 }
 
