@@ -44,8 +44,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-
 //login
 
 document.addEventListener("DOMContentLoaded", function () {
