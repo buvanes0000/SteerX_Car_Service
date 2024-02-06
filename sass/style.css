@@ -615,6 +615,8 @@ header .flex-hero .car {
 @media screen and (max-width: 361px) {
   .feedback {
     font-size: 0.6rem;
+    margin-left: 0;
+    width: 100%;
   }
 }
 

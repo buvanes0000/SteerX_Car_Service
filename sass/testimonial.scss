@@ -69,5 +69,7 @@
   margin-left: 1rem;
   @media screen and (max-width: 361px) {
     font-size: 0.6rem;
+    margin-left: 0;
+    width: 100%;
   }
 }
