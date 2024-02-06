@@ -81,6 +81,11 @@
     left: 5rem;
   }
 }
+@media screen and (max-width: 312px) {
+  #service .flex-service {
+    width: 100%;
+  }
+}
 #service .items {
   background-color: #fefbf6;
   padding: 1rem;
@@ -91,6 +96,11 @@
   width: 50px;
   position: relative;
   left: 4rem;
+}
+@media screen and (max-width: 312px) {
+  #service .items .icons {
+    width: 35px;
+  }
 }
 #service .items .rotating-image {
   animation: rotate 4s linear infinite;

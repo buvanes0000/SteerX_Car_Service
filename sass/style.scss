@@ -61,6 +61,9 @@ footer {
           flex-direction: column;
           margin-right: 3rem;
         }
+        @media (max-width: 478px) {
+          justify-content: space-between;
+        }
 
         li {
           list-style: none;
@@ -76,6 +79,10 @@ footer {
             margin: 1rem;
             opacity: 0.6;
             transition: 0.8s ease;
+            @media (max-width: 478px) {
+              font-size: 0.7rem;
+              margin: 0;
+            }
           }
           a:hover {
             opacity: 1;

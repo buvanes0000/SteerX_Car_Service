@@ -45,6 +45,10 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //login
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = document.querySelectorAll(".testimonial");
