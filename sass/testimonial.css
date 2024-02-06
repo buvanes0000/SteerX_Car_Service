@@ -73,14 +73,14 @@
   text-align: center;
 }
 
-.review {
+.feedback {
   font-size: 0.8rem;
   text-align: center;
   width: 90%;
   margin-left: 1rem;
 }
 @media screen and (max-width: 361px) {
-  .review {
+  .feedback {
     font-size: 0.6rem;
   }
 }/*# sourceMappingURL=testimonial.css.map */
