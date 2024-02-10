@@ -49,34 +49,3 @@ var swiper = new Swiper(".mySwiper", {
   effect: "cards",
   grabCursor: true,
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const testimonials = document.querySelectorAll(".testimonial");
-  let currentIndex = 0;
-
-  const prevArrow = document.querySelector(".arrow-prev");
-  const nextArrow = document.querySelector(".arrow-next");
-
-  prevArrow.addEventListener("click", () => {
-    currentIndex =
-      (currentIndex - 1 + testimonials.length) % testimonials.length;
-    updateTestimonialVisibility();
-  });
-
-  nextArrow.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateTestimonialVisibility();
-  });
-
-  function updateTestimonialVisibility() {
-    testimonials.forEach((testimonial, index) => {
-      if (index === currentIndex) {
-        testimonial.style.display = "flex";
-      } else {
-        testimonial.style.display = "none";
-      }
-    });
-  }
-
-  updateTestimonialVisibility();
-});

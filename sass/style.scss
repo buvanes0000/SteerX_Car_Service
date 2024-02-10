@@ -13,11 +13,15 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   background-color: #f7f7f7;
   font-family: "Poppins", Georgia, "Times New Roman", Times, serif;
+  overflow-x: hidden;
 }
 
 footer {
