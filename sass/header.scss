@@ -1,255 +1,250 @@
-header {
-  height: 100vh;
+.fixed {
+  margin-top: 0;
+}
+nav {
+  position: sticky;
 
-  .fixed {
-    margin-top: 0;
+  z-index: 1000;
+
+  width: 90%;
+  left: 4rem;
+  gap: 1rem;
+  background-color: #fefbf6;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.8rem;
+  transition: 0.5s ease;
+  @media (max-width: 768px) {
+    left: 2rem;
   }
-  nav {
-    position: sticky;
 
-    z-index: 10;
-    top: 1em;
+  @media (max-width: 468px) {
+    left: 1rem;
+  }
 
-    width: 90%;
-    left: 4rem;
-    gap: 1rem;
-    background-color: #fefbf6;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0.8rem;
-    transition: 0.5s ease;
-    @media (max-width: 768px) {
-      left: 2rem;
+  div {
+    justify-self: end;
+    display: inline-flex;
+    gap: 0.5em;
+    padding-left: 0.5rem;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
     }
+    .search-btn {
+      background: transparent;
+      border-radius: 20px;
+      height: 40px;
+      position: relative;
+      padding: 0.5rem 0.3rem;
 
-    @media (max-width: 468px) {
-      left: 1rem;
-    }
-
-    div {
-      justify-self: end;
-      display: inline-flex;
-      gap: 0.5em;
-      padding-left: 0.5rem;
+      top: 0.35em;
+      border: 0.1px solid #191717;
 
       img {
-        width: 50px;
-        border-radius: 50%;
+        width: 15%;
       }
-      .search-btn {
-        background: transparent;
-        border-radius: 20px;
-        height: 40px;
-        position: relative;
-        padding: 0.5rem 0.3rem;
-
-        top: 0.35em;
-        border: 0.1px solid #191717;
-
-        img {
-          width: 15%;
-        }
-        input {
-          color: #191717;
-          text-align: center;
-          border-radius: 20px;
-          border: none;
-          letter-spacing: 1px;
-          background: transparent;
-        }
-        input:focus {
-          outline-style: none;
-          box-shadow: none;
-        }
-      }
-    }
-
-    .show-menu {
-      left: 0;
-    }
-
-    ul {
-      display: flex;
-
-      gap: 1em;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-        position: fixed;
-        top: 5.11em;
+      input {
+        color: #191717;
         text-align: center;
-        left: -100%;
-        background-color: #fefbf6;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-
-        overflow: hidden;
-
-        padding: 1rem 0;
-
-        width: 100%;
-        transition: 0.7s ease-in;
+        border-radius: 20px;
+        border: none;
+        letter-spacing: 1px;
+        background: transparent;
       }
-
-      li {
-        list-style: none;
-        letter-spacing: 2px;
-
-        a {
-          color: #191717;
-          text-decoration: none;
-
-          position: relative;
-        }
-
-        a::after {
-          content: "";
-          position: absolute;
-          bottom: -6px;
-          height: 1px;
-          width: 100%;
-          left: 0;
-          background-color: rgb(0, 0, 0);
-          transform: scaleX(0);
-          transition: transform 0.5s ease-in-out;
-        }
-        a:hover::after {
-          transform: scaleX(1);
-        }
-
-        a:hover {
-          letter-spacing: 0.5rem;
-        }
-        .nav-link {
-          transition: 0.5s linear;
-        }
-      }
-    }
-    .menu-container {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-
-      padding: 0.4rem;
-
-      bottom: 0.3rem;
-      cursor: pointer;
-      display: none;
-
-      @media (max-width: 768px) {
-        display: block;
-      }
-
-      .menu-line {
-        width: 1.5rem;
-        height: 0.1rem;
-        background-color: #191717;
-        display: block;
-
-        margin-top: 0.4em;
-        transition: 0.5s ease;
+      input:focus {
+        outline-style: none;
+        box-shadow: none;
       }
     }
   }
 
-  .flex-hero {
-    display: inline-flex;
+  .show-menu {
+    left: 0;
+  }
+
+  ul {
+    display: flex;
+
+    gap: 1em;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      position: fixed;
+      top: 5.11em;
+      text-align: center;
+      left: -100%;
+      background-color: #fefbf6;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+      overflow: hidden;
+
+      padding: 1rem 0;
+
+      width: 100%;
+      transition: 0.7s ease-in;
+    }
+
+    li {
+      list-style: none;
+      letter-spacing: 2px;
+
+      a {
+        color: #191717;
+        text-decoration: none;
+
+        position: relative;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+      }
+      a:hover::after {
+        transform: scaleX(1);
+      }
+
+      a:hover {
+        letter-spacing: 0.5rem;
+      }
+      .nav-link {
+        transition: 0.5s linear;
+      }
+    }
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
+
+    padding: 0.4rem;
+
+    bottom: 0.3rem;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .menu-line {
+      width: 1.5rem;
+      height: 0.1rem;
+      background-color: #191717;
+      display: block;
+
+      margin-top: 0.4em;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+.flex-hero {
+  display: inline-flex;
+  position: relative;
+  top: 15rem;
+  width: 80%;
+
+  align-items: center;
+
+  left: 7rem;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    left: 1rem;
     top: 15rem;
-    width: 80%;
+    flex-direction: column-reverse;
 
-    align-items: center;
+    gap: 4rem;
+    transform: scale(0.9);
+  }
 
-    left: 7rem;
-    justify-content: space-between;
-
+  @media screen and (max-width: 364px) {
+    gap: 2rem;
+  }
+  .name-slogan {
+    align-self: center;
     @media screen and (max-width: 768px) {
-      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 5em;
+      letter-spacing: 0.3rem;
+
+      @media (max-width: 965px) {
+        font-size: 3rem;
+        text-align: start;
+      }
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+
+      span {
+        color: #d71313;
+      }
+    }
+    p {
+      letter-spacing: 0.15em;
+
+      @media (max-width: 965px) {
+        font-size: 0.8rem;
+        text-align: start;
+      }
+
+      @media (max-width: 565px) {
+        font-size: 0.6rem;
+        text-align: start;
+      }
+    }
+    button {
+      background-color: black;
+      color: #f7f7f7;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+      margin-top: 1.5rem;
+      cursor: pointer;
+      transition: 0.5s background-color ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #d71313;
+      transform: translateY(-3px);
+    }
+  }
+
+  .car {
+    width: 50%;
+    height: 50%;
+    top: 2rem;
+
+    @media (max-width: 968px) {
       left: 1rem;
-      top: 15rem;
-      flex-direction: column-reverse;
-
-      gap: 4rem;
-      transform: scale(0.9);
     }
-
-    @media screen and (max-width: 364px) {
-      gap: 2rem;
-    }
-    .name-slogan {
+    @media screen and (max-width: 768px) {
       align-self: center;
-      @media screen and (max-width: 768px) {
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 5em;
-        letter-spacing: 0.3rem;
-
-        @media (max-width: 965px) {
-          font-size: 3rem;
-          text-align: start;
-        }
-
-        @media screen and (max-width: 768px) {
-          text-align: center;
-        }
-
-        span {
-          color: #d71313;
-        }
-      }
-      p {
-        letter-spacing: 0.15em;
-
-        @media (max-width: 965px) {
-          font-size: 0.8rem;
-          text-align: start;
-        }
-
-        @media (max-width: 565px) {
-          font-size: 0.6rem;
-          text-align: start;
-        }
-      }
-      button {
-        background-color: black;
-        color: #f7f7f7;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 10px;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-
-        margin-top: 1.5rem;
-        cursor: pointer;
-        transition: 0.5s background-color ease, transform 0.2s;
-      }
-
-      button:hover {
-        background-color: #d71313;
-        transform: translateY(-3px);
-      }
     }
-
-    .car {
-      width: 50%;
-      height: 50%;
-      top: 2rem;
-
-      @media (max-width: 968px) {
-        left: 1rem;
-      }
-      @media screen and (max-width: 768px) {
-        align-self: center;
-      }
-      @media screen and (max-width: 364px) {
-        width: 200px;
-        height: 200px;
-        object-fit: contain;
-      }
+    @media screen and (max-width: 364px) {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
     }
   }
 }
