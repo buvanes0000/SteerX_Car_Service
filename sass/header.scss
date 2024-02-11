@@ -3,11 +3,9 @@
 }
 nav {
   position: fixed;
+  width: 100%;
 
   z-index: 1000;
-
-  width: 90%;
-  left: 4rem;
   gap: 1rem;
   background-color: #fefbf6;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -16,13 +14,6 @@ nav {
   justify-content: space-between;
   padding: 1rem 0.8rem;
   transition: 0.5s ease;
-  @media (max-width: 768px) {
-    left: 2rem;
-  }
-
-  @media (max-width: 468px) {
-    left: 1rem;
-  }
 
   div {
     justify-self: end;
@@ -74,7 +65,7 @@ nav {
     @media (max-width: 768px) {
       flex-direction: column;
       position: fixed;
-      top: 5.11em;
+      top: 4.11em;
       text-align: center;
       left: -100%;
       background-color: #fefbf6;

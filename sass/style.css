@@ -6,9 +6,8 @@
 
 nav {
   position: fixed;
+  width: 100%;
   z-index: 1000;
-  width: 90%;
-  left: 4rem;
   gap: 1rem;
   background-color: #fefbf6;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -17,16 +16,6 @@ nav {
   justify-content: space-between;
   padding: 1rem 0.8rem;
   transition: 0.5s ease;
-}
-@media (max-width: 768px) {
-  nav {
-    left: 2rem;
-  }
-}
-@media (max-width: 468px) {
-  nav {
-    left: 1rem;
-  }
 }
 nav div {
   justify-self: end;
@@ -73,7 +62,7 @@ nav ul {
   nav ul {
     flex-direction: column;
     position: fixed;
-    top: 5.11em;
+    top: 4.11em;
     text-align: center;
     left: -100%;
     background-color: #fefbf6;
@@ -329,6 +318,11 @@ nav .menu-container .menu-line {
   flex-direction: column;
   position: relative;
 }
+@media screen and (max-width: 668px) {
+  #service {
+    min-height: auto;
+  }
+}
 @media screen and (max-width: 568px) {
   #service {
     top: 5rem;
@@ -548,7 +542,8 @@ nav .menu-container .menu-line {
 }
 @media screen and (max-width: 361px) {
   .swiper {
-    width: 150px;
+    width: 180px;
+    height: 300px;
   }
 }
 
@@ -592,7 +587,7 @@ nav .menu-container .menu-line {
 }
 @media screen and (max-width: 361px) {
   .customer-image {
-    left: 0.5rem;
+    left: 1rem;
   }
 }
 @media screen and (max-width: 361px) {
@@ -611,6 +606,7 @@ nav .menu-container .menu-line {
   font-size: 0.8rem;
   text-align: center;
   width: 90%;
+  padding: 10px;
   margin-left: 1rem;
 }
 @media screen and (max-width: 361px) {

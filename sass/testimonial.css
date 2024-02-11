@@ -14,7 +14,8 @@
 }
 @media screen and (max-width: 361px) {
   .swiper {
-    width: 150px;
+    width: 180px;
+    height: 300px;
   }
 }
 
@@ -58,7 +59,7 @@
 }
 @media screen and (max-width: 361px) {
   .customer-image {
-    left: 0.5rem;
+    left: 1rem;
   }
 }
 @media screen and (max-width: 361px) {
@@ -77,6 +78,7 @@
   font-size: 0.8rem;
   text-align: center;
   width: 90%;
+  padding: 10px;
   margin-left: 1rem;
 }
 @media screen and (max-width: 361px) {
