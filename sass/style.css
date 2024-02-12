@@ -312,16 +312,11 @@ nav .menu-container .menu-line {
   }
 }
 #service {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-@media screen and (max-width: 668px) {
-  #service {
-    min-height: auto;
-  }
+  top: -10rem;
 }
 @media screen and (max-width: 568px) {
   #service {
